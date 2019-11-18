@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace Telas
 {
     /// <summary>
-    /// Lógica interna para DadosPessoais.xaml
+    /// Lógica interna para CadastroTurma.xaml
     /// </summary>
-    public partial class DadosPessoais : Window
+    public partial class CadastroTurma : Window
     {
-        public DadosPessoais()
+        public CadastroTurma()
         {
             InitializeComponent();
-        }
-
-        private void Txtn_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }

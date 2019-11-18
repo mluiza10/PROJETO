@@ -5,15 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Administrador"
         mc:Ignorable="d"
-        Title="School English" Height="250" Width="335">
+        Title="School English" Height="400" Width="410">
     <Grid>
-        <GroupBox Header="Professor" Margin="10,0,10,35" Grid.RowSpan="3">
-            <Grid>
-                <Button Height="32" Width="210" Content="Dados" HorizontalAlignment="Left" 
-                           VerticalAlignment="Top" Margin="33,35,0,0" />
-                <Button Height="32" Width="210" Content="Listar Turmas" HorizontalAlignment="Left" 
-                           VerticalAlignment="Top" Margin="33,86,0,0" />
+        <GroupBox Header="Dados do professor" Margin="10,11,10,10">
+            <Grid >
+                <TextBlock Height="20" Width="100" HorizontalAlignment="Left" 
+              VerticalAlignment="Top" Text="Nome:" Margin="10,10,0,0" />
+
+                <TextBox Name="txtN" Height="20" Width="300" HorizontalAlignment="Left" 
+              VerticalAlignment="Top" Text="Airam Aziul ‮Arievilo Zurc" Margin="50,10,0,0" />
+
+                <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
+              VerticalAlignment="Top" Text="Email:" Margin="10,40,0,0"/>
+
+                <TextBox Name="txtE" Height="20" Width="300" HorizontalAlignment="Left" 
+              VerticalAlignment="Top" Text="airamaziul@gmail.com" Margin="50,40,0,0" />
+
+                <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
+              VerticalAlignment="Top" Text="Nascimento:" Margin="10,75,0,0"/>
+
+                <TextBox Name="txtNasci" Height="20" Width="80" HorizontalAlignment="Left" 
+              VerticalAlignment="Top" Text="08/02/1987" Margin="80,76,0,0" />
+
+                <TextBlock Height="20" Width="100" HorizontalAlignment="Right"
+              VerticalAlignment="Top" Text="Formação" Margin="0,75,71,0"/>
+
+                <TextBox Name="txtFormacao" Height="20" Width="69" HorizontalAlignment="Right" 
+             VerticalAlignment="Top" Text="" Margin="0,75,20,0" TextChanged="TxtNivel_TextChanged" RenderTransformOrigin="-0.567,0.5" />
+
+                <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
+            VerticalAlignment="Top" Margin="10,110,0,0" Text="Matricula:"/>
+
+                <TextBox Name="txtM" Height="20" Width="80" HorizontalAlignment="Right" 
+             VerticalAlignment="Top" Text="1234-7" Margin="0,110,210,0" />
+
+
+                <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
+            VerticalAlignment="Top" Margin="200,110,0,0" Text="Senha:"/>
+
+                <TextBox Name="txtS" Height="20" Width="68" HorizontalAlignment="Right" 
+             VerticalAlignment="Top" Text="" Margin="0,110,21,0" TextChanged="TxtS_TextChanged" />
+
+
+                <Button Content="Listar" HorizontalAlignment="Left" Margin="100,150,0,0" VerticalAlignment="Top" Width="75"/>
+                <Button Content="Atualizar" HorizontalAlignment="Left" Margin="187,150,0,0" VerticalAlignment="Top" Width="75"/>
+                <ListBox HorizontalAlignment="Left" Height="130" Margin="10,187,0,0" VerticalAlignment="Top" Width="340"/>
+
             </Grid>
         </GroupBox>
+ 
     </Grid>
 </Window>
